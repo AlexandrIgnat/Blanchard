@@ -53,7 +53,7 @@
   src: local('OpenSans-SemiBold')
     url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
     url('../fonts/OpenSans-SemiBold.woff') format('woff');
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
