@@ -1,3 +1,8 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark: #000000;
+}
+
 @font-face {
   font-family: 'OpenSans';
   src: local('OpenSansMedium')
@@ -58,7 +63,7 @@
   font-display: swap;
 }
 
-* {
+html {
   box-sizing: border-box;
   font-family: 'OpenSans', sans-serif;
   background: #E5E5E5;
@@ -82,9 +87,203 @@ img {
   max-width: 100%;
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 160px;
+  max-width: 1600px;
+}
+
+.flex {
+  display: flex;
+}
+
+/*header*/
+
+.top-wrapper {
+  position: relative;
+}
+
 .header {
-  position: fixed;
+  position: relative;
+  padding: 30px 0;
+  z-index: 11;
+  background: var(--color-dark);
+}
+
+.header-content {
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.nav__item {
+  color: var(--color-white);
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 62px;
+}
+
+.nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.login {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-white);
+}
+
+.login__arrow-wrap {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  transition-property: margin-left, padding-left;
+  transition-duration: .3s;
+}
+
+.login__arrow {
+  margin-left: -4px;
+}
+
+.login:hover .login__arrow-wrap {
+  margin-left: -4px;
+  padding-left: 4px;
+}
+
+.header-bottom {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.header-bottom-content {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero__content {
+  pointer-events: none;
+  color: #fff;
+}
+
+.hero__content > * {
+  pointer-events: auto;
+}
+
+.hero__title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.hero__text {
+  max-width: 80%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 20px 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: mediumpurple;
+  transition: background-color .3s ease;
+}
+
+.hero__btn:hover {
+  background-color: mediumslateblue;
+}
+
+.slider-wrapper {
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.slider.swiper-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: resize;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.test-block {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.slide {
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgray;
+}
+
+.slide-1 {
+  background-image: url("https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688");
+}
+
+.slide-2 {
+  background-image: url("https://media.istockphoto.com/photos/beautiful-emeraldcolored-glacial-rivers-of-iceland-taken-from-a-picture-id1202227531");
+}
+
+.slide-3 {
+  background-image: url("https://media.istockphoto.com/photos/wild-grass-in-the-mountains-at-sunset-picture-id1322277517");
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
 }
