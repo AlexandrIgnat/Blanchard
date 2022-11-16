@@ -1,6 +1,7 @@
 :root {
   --color-white: #ffffff;
   --color-dark: #000000;
+  --color-dark-opacity: rgba(0, 0, 0, 0.5);
   --coloc-nightrider: #333333;
   --color-amethyst:#9d5cd0;
 }
@@ -132,6 +133,9 @@ img {
 .header {
   position: relative;
   z-index: 11;
+}
+
+.header-top {
   background: var(--color-dark);
 }
 
@@ -180,7 +184,7 @@ img {
   padding-left: 4px;
 }
 
-.header-bottom {
+.header__bottom {
   background-color: rgba(0, 0, 0, .5);
 }
 
@@ -236,13 +240,13 @@ img {
 }
 
 .menu__list {
-  background-color: rgba(0,0,0,0.5);
+  margin: 0;
   display: flex;
 }
 
 .menu__item {
   position: relative;
-  margin-right: 50px;
+  margin-right: 96px;
 }
 
 .menu__btn {
@@ -252,6 +256,16 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   cursor: pointer;
+}
+
+.menu__btn--arrow {
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  margin-left: 3px;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .hero {
