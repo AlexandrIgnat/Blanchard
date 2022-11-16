@@ -1,3 +1,16 @@
+/*hero swiper*/
+
+const swiper = new Swiper('.js-hero-swiper', {
+  allowTouchMove: false,
+  loop: true,
+  effect: 'fade',
+  speed: 10000,
+  autoplay: {
+    delay: 10000
+  }
+});
+
+
 document.querySelectorAll(".dropdown__simplebar").forEach(dropdown => {
   new SimpleBar(dropdown, {
   /* чтобы изначально ползунок был виден */
