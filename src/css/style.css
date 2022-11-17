@@ -3,14 +3,12 @@
   --color-dark: #000000;
   --color-dark-opacity: rgba(0, 0, 0, 0.5);
   --coloc-nightrider: #333333;
-  --color-amethyst:#9d5cd0;
+  --color-amethyst: #9d5cd0;
 }
 
 @font-face {
   font-family: 'OpenSans';
-  src: local('OpenSansMedium')
-    url('../fonts/OpenSansMedium.woff2') format('woff2'),
-    url('../fonts/OpenSansMedium.woff') format('woff');
+  src: local('OpenSansMedium') url('../fonts/OpenSansMedium.woff2') format('woff2'), url('../fonts/OpenSansMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,9 +16,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: local('OpenSans-Bold')
-    url('../fonts/OpenSans-Bold.woff2') format('woff2'),
-    url('../fonts/OpenSans-Bold.woff') format('woff');
+  src: local('OpenSans-Bold') url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -28,9 +24,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: local('OpenSans-ExtraBold')
-    url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
-    url('../fonts/OpenSans-ExtraBold.woff') format('woff');
+  src: local('OpenSans-ExtraBold') url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'), url('../fonts/OpenSans-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -38,9 +32,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: local('OpenSans-Light')
-    url('../fonts/OpenSans-Light.woff2') format('woff2'),
-    url('../fonts/OpenSans-Light.woff') format('woff');
+  src: local('OpenSans-Light') url('../fonts/OpenSans-Light.woff2') format('woff2'), url('../fonts/OpenSans-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -48,9 +40,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: local('OpenSans-Regular')
-    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
-    url('../fonts/OpenSans-Regular.woff') format('woff');
+  src: local('OpenSans-Regular') url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -58,9 +48,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: local('OpenSans-SemiBold')
-    url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
-    url('../fonts/OpenSans-SemiBold.woff') format('woff');
+  src: local('OpenSans-SemiBold') url('../fonts/OpenSans-SemiBold.woff2') format('woff2'), url('../fonts/OpenSans-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -123,6 +111,7 @@ img {
   width: 0;
   overflow: hidden;
 }
+
 
 /*header*/
 
@@ -194,6 +183,7 @@ img {
   padding-bottom: 10px;
 }
 
+
 /* add simplebar */
 
 .dropdown {
@@ -220,7 +210,7 @@ img {
 .dropdown__item {
   min-height: 30px;
   padding: 5px;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   margin-bottom: 20px;
 }
@@ -373,11 +363,11 @@ img {
   0% {
     transform: scale(1);
   }
-
   100% {
     transform: scale(1.1);
   }
 }
+
 
 /*about*/
 
@@ -399,4 +389,159 @@ img {
   font-size: 16px;
   line-height: 32px;
   color: var(--coloc-nightrider);
+}
+
+
+/* gallery section */
+
+.gallery {
+  min-height: 595px;
+  background-image: url('../images/gallery_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  color: #ffffff;
+}
+
+.gallery__filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.gallery__filter {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 45%;
+}
+
+.gallery__filter-label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.choices {
+  margin-bottom: 176px;
+  width: 400px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+
+.choices__inner {
+  background-color: transparent;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding: 0;
+}
+
+.choices__list {
+  padding: 0;
+}
+
+.choices__list--single .choices__item {
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.choices__list--dropdown .choices__item,
+.choices__list[aria-expanded] .choices__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: #808080;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.gallery__custom-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__custom-checkbox:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-text {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.checkbox-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff;
+}
+
+.checkbox-text::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  opacity: 0;
+  background-image: url('../images/checkbox.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.checkbox:checked+.checkbox-text::before {
+  border-color: #C283F3;
+}
+
+.checkbox:checked+.checkbox-text::after {
+  opacity: 1;
+}
+
+.slide-gallery {
+  width: 35%;
 }

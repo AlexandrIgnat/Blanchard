@@ -10,14 +10,18 @@ const swiper = new Swiper('.js-hero-swiper', {
   }
 });
 
+const mySwiper = new Swiper('.slider-2', {
+  loop: true
+})
+
 
 document.querySelectorAll(".dropdown__simplebar").forEach(dropdown => {
   new SimpleBar(dropdown, {
-  /* чтобы изначально ползунок был виден */
-  autoHide: false,
-  /* с помощью этого значения вы можете управлять высотой ползунка*/
-  scrollbarMaxSize: 25,
-});
+    /* чтобы изначально ползунок был виден */
+    autoHide: false,
+    /* с помощью этого значения вы можете управлять высотой ползунка*/
+    scrollbarMaxSize: 25,
+  });
 })
 
 
@@ -43,3 +47,9 @@ btns.forEach(item => {
     this.classList.toggle(activeClassbtns);
   })
 })
+
+
+const choices = new Choices('.gallery_filter-select', {
+  searchEnabled: false,
+  placeholder: true
+});
