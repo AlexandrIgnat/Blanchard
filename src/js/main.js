@@ -11,7 +11,24 @@ const swiper = new Swiper('.js-hero-swiper', {
 });
 
 const mySwiper = new Swiper('.slider-2', {
-  loop: true
+  loop: true,
+  direction: 'horizontal',
+  slidesPerView: '3',
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+
+
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    clickable: true,
+  },
 })
 
 
@@ -53,6 +70,25 @@ const choices = new Choices('.gallery_filter-select', {
   searchEnabled: false,
   placeholder: true
 });
+
+/* modal */
+var galleryModal = document.getElementById('gallery__modal');
+var blockBtn = document.getElementById('gallery__swiper-hover');
+var span = document.getElementById('modal-close');
+
+blockBtn.onclick = function() {
+  galleryModal.style.display = "block";
+}
+
+span.onclick = function() {
+  galleryModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == galleryModal) {
+    galleryModal.style.display = "none";
+  }
+}
 
 // Catalog accordion
 

@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blanchard</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.css" integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/simplebar.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -284,6 +284,7 @@
       <div class="container">
 
         <div class="gallery__filter-container">
+
           <div class="gallery__filter">
             <h2 class="gallery__title">Галерея</h2>
             <label for="" class="gallery__filter-label">Фильтр:</label>
@@ -308,69 +309,78 @@
               <span class="checkbox-text">Современность</span>
             </label>
           </div>
-          <div class="gallery__slider">
+          <div class="swiper__controls">
+            <div class="swiper__nav">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
             <div class="swiper">
               <div class="swiper-container slider-2">
-                <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
+
                   <div class="swiper-slide slide-gallery slide-gallery-1">
                     <picture class="picture">
                       <img class="gallery__image" src="./images/gallery_swiper-1.jpg" alt="Картинка 1">
                     </picture>
-                    <button class="gallery__swiper_button">
-
-                  </button>
-                    <div class="gallery__modal"></div>
+                    <button type="button" class="gallery__swiper-hover">
+                    </button>
                   </div>
                   <div class="swiper-slide slide-gallery slide-gallery-2">
                     <picture class="picture">
                       <img class="gallery__image" src="./images/gallery_swiper-2.jpg" alt="Картинка 2">
                     </picture>
-                    <button class="gallery__swiper_button">
-
-                  </button>
-                    <div class="gallery__modal"></div>
+                    <button type="button" id="gallery__swiper-hover" class="gallery__swiper-hover">
+                    </button>
                   </div>
                   <div class="swiper-slide slide-gallery slide-gallery-3">
                     <picture class="picture">
                       <img class="gallery__image" src="./images/gallery_swiper-3.jpg" alt="Картинка 3">
                     </picture>
-                    <button class="gallery__swiper_button">
-
-                  </button>
-                    <div id="myModal" class="gallery__modal"></div>
-                  </div>
-                  <div class="swiper-slide slide-gallery slide-gallery-3">
-                    <picture class="picture">
-                      <img class="gallery__image" src="./images/gallery_swiper-4.jpg" alt="Картинка 1">
-                    </picture>
-                    <button class="gallery__swiper_button">
-
-                  </button>
-                    <div class="gallery__modal"></div>
+                    <button type="button" class="gallery__swiper-hover">
+                    </button>
                   </div>
                   <div class="swiper-slide slide-gallery slide-gallery-4">
                     <picture class="picture">
-                      <img class="gallery__image" src="./images/gallery_swiper-5.jpg" alt="Картинка 2">
+                      <img class="gallery__image" src="./images/gallery_swiper-4.jpg" alt="Картинка 1">
                     </picture>
-                    <button class="gallery__swiper_button">
-
-                  </button>
-                    <div class="gallery__modal"></div>
+                    <button type="button" class="gallery__swiper-hover">
+                    </button>
                   </div>
                   <div class="swiper-slide slide-gallery slide-gallery-5">
                     <picture class="picture">
+                      <img class="gallery__image" src="./images/gallery_swiper-5.png" alt="Картинка 2">
+                    </picture>
+                    <button type="button" class="gallery__swiper-hover">
+                    </button>
+                  </div>
+                  <div class="swiper-slide slide-gallery slide-gallery-6">
+                    <picture class="picture">
                       <img class="gallery__image" src="./images/gallery_swiper-6.jpg" alt="Картинка 3">
                     </picture>
-                    <button class="gallery__swiper_button">
-
-                  </button>
-                    <div class="gallery__modal"></div>
+                    <button type="button" class="gallery__swiper-hover">
+                    </button>
                   </div>
                 </div>
 
               </div>
             </div>
+            <div id="gallery__modal" class="gallery__modal">
+              <div class="gallery__modal-content">
+                  <span id="modal-close" class="modal-close">&times;</span>
+                  <div class="left__block">
+                      <div class="img__block">
+                          <img src="images/modal-window.png" class="gallery__modal-image" alt="«Женщина с граблями»">
+                      </div>
+                  </div>
+                  <div class="right__block">
+                      <h3 class="gallery__modal-author">Казимир Малевич</h3>
+                      <h3 class="gallery__modal-name">«Женщина с граблями»</h3>
+                      <span class="gallery__modal-date">1931–1932</span>
+                      <p class="gallery__modal__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
@@ -675,8 +685,8 @@
     </section>
   </main>
 
-  <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.6/simplebar.min.js" integrity="sha512-rn0CaCtyheymRT43p0ZuFH0SvNriLU5cuJpY2f4IcyLrbHzJdsIF1dygi9oNha1BhHagO8U+h2xRWCosYf9gCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/simplebar.min.js"></script>
   <script defer src="./js/choices.min.js"></script>
   <script defer src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
   <script defer src="js/main.js"></script>
