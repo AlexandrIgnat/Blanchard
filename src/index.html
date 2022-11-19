@@ -271,7 +271,7 @@
   <main>
     <section class="about">
       <div class="container">
-        <h2 class="about__title">О нас</h2>
+        <h2 class="common__title about__title">О нас</h2>
         <p class="common__text about__text">
           Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать,
           что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный
@@ -387,15 +387,19 @@
     </section>
     <section class="catalog">
       <div class="container">
-        <h2 class="catalog__title">Каталог</h2>
+        <h2 class="common__title catalog__title">Каталог</h2>
         <p class="common__text catalog__text">
           Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
         </p>
         <div class="catalog__wrap js-tabs-wrap">
           <div class="catalog__content-wrap">
             <div class="catalog__painter-info active js-tab-content" data-target="domenico">
-              <h3>Доменико Гирландайо</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corporis quidem nemo animi molestias eos blanditiis, aperiam quas. Maiores mollitia ipsum eius consequatur incidunt accusamus quos quisquam facilis, adipisci nostrum?</p>
+              <picture>
+                <img class="catalog__painter-image" src="images/catalog_grinaldo.jpg" alt="Domenico">
+              </picture>
+              <h3 class="catalog__painter-title">Доменико Гирландайо</h3>
+              <span class="catalog__painter-subtitle">2 июня 1448–11 января 1494</span>
+              <p class="catalog__painter-text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции в&nbsp;костюмах того времени).</p>
             </div>
             <div class="catalog__painter-info js-tab-content" data-target="empty">
               <h3>Такого художника пока нет</h3>
@@ -685,10 +689,10 @@
     </section>
   </main>
 
+  <script defer src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
   <script defer src="js/swiper-bundle.min.js"></script>
   <script defer src="js/simplebar.min.js"></script>
   <script defer src="./js/choices.min.js"></script>
-  <script defer src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 
