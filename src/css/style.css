@@ -82,6 +82,11 @@ a {
   text-decoration: none;
 }
 
+picture>img {
+  vertical-align: top;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
 }
@@ -119,6 +124,13 @@ img {
   overflow: hidden;
 }
 
+.common__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 48px;
+  line-height: 65px;
+  color: var(--color-nightrider);
+}
 
 /*header*/
 
@@ -584,14 +596,6 @@ opacity: 0;
   padding: 80px 0;
 }
 
-.about__title {
-  margin: 0;
-  margin-bottom: 15px;
-  font-size: 48px;
-  line-height: 65px;
-  color: var(--color-nightrider);
-}
-
 .common__text {
   margin: 0;
   max-width: 1080px;
@@ -958,9 +962,11 @@ opacity: 0;
 
 /* catalog */
 
-
 .catalog {
-  padding-top: 50px;
+  padding: 80px 0;
+}
+
+.catalog__text {
   padding-bottom: 50px;
 }
 
@@ -987,6 +993,30 @@ opacity: 0;
   to {
     opacity: 1;
   }
+}
+
+.catalog__painter-image {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.catalog__painter-title {
+  line-height: 32px;
+  margin: 0;
+  /* margin-bottom: 5px; */
+}
+
+.catalog__painter-subtitle {
+  display: inline-block;
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 15px;
+}
+
+.catalog__painter-text {
+  line-height: 32px;
+  margin: 0;
+  max-width: 720px;
 }
 
 .catalog__accordion {
@@ -1216,6 +1246,7 @@ opacity: 0;
 
 .link__text {
   position: relative;
+  line-height: 32px;
 }
 
 .link__icon {
