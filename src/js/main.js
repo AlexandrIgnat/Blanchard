@@ -42,12 +42,13 @@ function setTabs(params) {
     this.classList.add(params.active);
   }
 
-  tabBtns.forEach(function (el) {
+  tabBtns.forEach(function(el) {
     el.addEventListener("click", onTabClick);
   });
 }
 
 setTabs(params);
+
 
 /*hero swiper*/
 
@@ -71,7 +72,7 @@ const mySwiper = new Swiper('.slider-2', {
 
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".gallery .swiper-pagination",
     type: "fraction",
   },
 
@@ -81,6 +82,8 @@ const mySwiper = new Swiper('.slider-2', {
     clickable: true,
   },
 })
+
+
 
 
 document.querySelectorAll(".dropdown__simplebar").forEach(dropdown => {
@@ -122,12 +125,13 @@ const choices = new Choices('.gallery_filter-select', {
   placeholder: true
 });
 
+
 /* modal */
 var galleryModal = document.getElementById('gallery__modal');
-var blockBtn = document.getElementById('gallery__swiper-hover');
+var blockLink = document.getElementById('gallery__swiper-hover');
 var span = document.getElementById('modal-close');
 
-blockBtn.onclick = function() {
+blockLink.onclick = function() {
   galleryModal.style.display = "block";
 }
 
