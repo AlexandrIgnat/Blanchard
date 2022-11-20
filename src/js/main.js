@@ -130,6 +130,8 @@ const choices = new Choices('.gallery_filter-select', {
 var galleryModal = document.getElementById('gallery__modal');
 var blockLink = document.getElementById('gallery__swiper-hover');
 var span = document.getElementById('modal-close');
+var swiperImage = document.querySelectorAll('.slide-gallery');
+let modalImage = document.querySelector('.gallery__modal-image');
 
 blockLink.onclick = function() {
   galleryModal.style.display = "block";
@@ -140,7 +142,17 @@ span.onclick = function() {
 }
 
 window.onclick = function(event) {
-  if (event.target == galleryModal) {
+  if (event.target !== galleryModal && !event.target.closest('.slide-gallery')) {
     galleryModal.style.display = "none";
   }
 }
+
+
+swiperImage.forEach(element => {
+  element.addEventListener('click', () => {
+    let img = element.querySelector('.gallery__image').getAttribute('src');
+
+    modalImage.src = img;
+    galleryModal.style.display = "block";
+  })
+})
