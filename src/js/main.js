@@ -63,7 +63,6 @@ const swiper = new Swiper('.js-hero-swiper', {
 });
 
 const mySwiper = new Swiper('.slider-2', {
-  loop: true,
   direction: 'horizontal',
   slidesPerView: '3',
   slidesPerGroup: 3,
@@ -122,7 +121,8 @@ btns.forEach(item => {
 
 const choices = new Choices('.gallery_filter-select', {
   searchEnabled: false,
-  placeholder: true
+  placeholder: true,
+  itemSelectText: ''
 });
 
 
@@ -150,9 +150,15 @@ window.onclick = function(event) {
 
 swiperImage.forEach(element => {
   element.addEventListener('click', () => {
+<<<<<<< HEAD
     let img = element.querySelector('.gallery__image').getAttribute('src');
 
     modalImage.src = img;
+=======
+    // let img = element.querySelector('.gallery__image').getAttribute('src');
+
+    // modalImage.src = img;
+>>>>>>> 35de4d02f8d9916ae379e4b2717df7cf8d594b7a
     galleryModal.style.display = "block";
   })
 })
