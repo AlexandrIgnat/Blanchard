@@ -135,6 +135,7 @@ img {
 }
 
 
+
 /*header*/
 
 .top-wrapper {
@@ -1072,6 +1073,7 @@ img {
 }
 
 
+
 /* catalog */
 
 .catalog {
@@ -1417,39 +1419,3 @@ img {
   color: var(--dark)
 }
 
-
-/* Link another */
-
-.link--text-another {
-  color: var(--dark);
-}
-
-.link--text-another:hover {
-  color: var(--violet-dark);
-}
-
-.link--text-another:focus:not(:hover):not(:active) {
-  color: var(--color-white);
-}
-
-.link--text-another::before {
-  top: 0;
-  bottom: 0;
-  left: -3px;
-  right: -3px;
-  background-color: var(--color-amethyst);
-}
-
-.link--text-another:active {
-  color: var(--violet-dark);
-}
-
-.link--text-another:active::after {
-  transform: scaleX(0);
-}
-
-@media (max-width: 1024px) {
-  .accordion__question {
-    width: calc(100% / 2 - 30px);
-  }
-}
