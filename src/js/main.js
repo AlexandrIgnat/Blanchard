@@ -156,3 +156,44 @@ swiperImage.forEach(element => {
     galleryModal.style.display = "block";
   })
 })
+
+const eventSwiper = new Swiper('.events__slider', {
+  slidesPerView: 3,
+  spaceBetween: 25,
+
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  a11y: {
+    prevSlideMessage: 'предыдущий слайд',
+    nextSlideMessage: 'следующий слайд',
+  },
+
+  // breakpoints: {
+  //   500: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 34,
+  //     slidesPerGroup: 2,
+  //   },
+
+  //   962: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 27,
+  //     slidesPerGroup: 3,
+  //   },
+
+  //   1400: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 50,
+  //     slidesPerGroup: 3,
+  //     }
+  // },
+});
