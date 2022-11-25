@@ -159,7 +159,7 @@ swiperImage.forEach(element => {
 
 const eventSwiper = new Swiper('.events__slider', {
   slidesPerView: 3,
-  spaceBetween: 25,
+  spaceBetween: 50,
 
 
   navigation: {
