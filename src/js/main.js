@@ -82,6 +82,23 @@ const mySwiper = new Swiper('.slider-2', {
   },
 })
 
+const projectsPartnerSwiper = new Swiper('.slider-3', {
+  loop: true,
+  slidesPerView: '3',
+  spaceBetween: 50,
+
+  navigation: {
+    nextEl: '.projects-partners__swiper-button-next',
+    prevEl: '.projects-partners__swiper-button-prev',
+    clickable: true,
+  },
+
+  a11y: {
+    prevSlideMessage: 'предыдущий слайд',
+    nextSlideMessage: 'следующий слайд',
+  },
+})
+
 
 
 
@@ -150,15 +167,9 @@ window.onclick = function(event) {
 
 swiperImage.forEach(element => {
   element.addEventListener('click', () => {
-<<<<<<< HEAD
-    let img = element.querySelector('.gallery__image').getAttribute('src');
-
-    modalImage.src = img;
-=======
     // let img = element.querySelector('.gallery__image').getAttribute('src');
 
     // modalImage.src = img;
->>>>>>> 35de4d02f8d9916ae379e4b2717df7cf8d594b7a
     galleryModal.style.display = "block";
   })
 })
