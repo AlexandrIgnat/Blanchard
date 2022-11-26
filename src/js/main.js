@@ -82,6 +82,23 @@ const mySwiper = new Swiper('.slider-2', {
   },
 })
 
+const projectsPartnerSwiper = new Swiper('.slider-3', {
+  loop: true,
+  slidesPerView: '3',
+  spaceBetween: 50,
+
+  navigation: {
+    nextEl: '.projects-partners__swiper-button-next',
+    prevEl: '.projects-partners__swiper-button-prev',
+    clickable: true,
+  },
+
+  a11y: {
+    prevSlideMessage: 'предыдущий слайд',
+    nextSlideMessage: 'следующий слайд',
+  },
+})
+
 
 
 
@@ -159,7 +176,7 @@ swiperImage.forEach(element => {
 
 const eventSwiper = new Swiper('.events__slider', {
   slidesPerView: 3,
-  spaceBetween: 50,
+  spaceBetween: 25,
 
 
   navigation: {
