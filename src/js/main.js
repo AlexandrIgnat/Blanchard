@@ -83,8 +83,8 @@ const mySwiper = new Swiper('.slider-2', {
 })
 
 const projectsPartnerSwiper = new Swiper('.slider-3', {
-  loop: true,
   slidesPerView: '3',
+  slidesPerGroup: 3,
   spaceBetween: 50,
 
   navigation: {
