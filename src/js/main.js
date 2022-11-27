@@ -76,8 +76,8 @@ const mySwiper = new Swiper('.slider-2', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.gallery__swiper-button-next',
+    prevEl: '.gallery__swiper-button-prev',
     clickable: true,
   },
 })
@@ -180,8 +180,8 @@ const eventSwiper = new Swiper('.events__slider', {
 
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.events__slider-btn-next',
+    prevEl: '.events__slider-btn-prev',
   },
 
   pagination: {
