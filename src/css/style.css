@@ -110,7 +110,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 50px;
-  max-width: 1600px;
+  max-width: 1700px;
 }
 
 .flex {
@@ -1608,6 +1608,30 @@ img {
 
 /* projects */
 
+.projects {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.projects__text {
+  max-width: 1010px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.projects__text-link {
+  color: var(--color-amethyst);
+}
+
+.projects-partners__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var( --color-nightrider);
+  margin: 0;
+  margin-bottom: 23px;
+}
+
 .project__swiper-wrapper {
   position: relative;
   padding: 0 75px;
@@ -1620,17 +1644,28 @@ img {
 .projects-partners__slide {
   position: relative;
   justify-content: center;
+  align-items: center;
+  height: 150px;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid grey;
-  padding-top: 44px;
-  padding-bottom: 44px;
-  filter: grayscale(1);
-  opacity: 0.4;
+  border: 2px solid var(--light-middle-gray);
 }
 
-.projects__text-link {
-  color: var(--color-amethyst);
+.projects-partners__slide:focus,
+.projects-partners__slide:active {
+  border-color: var(--color-amethyst);
+}
+
+.projects-partners__image {
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.projects-partners__slide:active .projects-partners__image,
+.projects-partners__slide:hover .projects-partners__image{
+  opacity: 1;
+  filter: grayscale(0);
 }
 
 .projects-partners__swiper-button-prev {
