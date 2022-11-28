@@ -172,7 +172,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: var(--color-white);
-  transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .nav__link-text {
@@ -217,6 +217,10 @@ img {
   transition: color .3s ease-in-out, fill .3s ease-in-out;
 }
 
+.login__arrow path {
+  transition: fill .3s ease-in-out;
+}
+
 .login::before {
   content: '';
   position: absolute;
@@ -238,8 +242,8 @@ img {
   color: var(--color-wisteria);
 }
 
-.login__arrow path:hover {
-  fill: var(--color-wisteria)
+.login:hover svg path {
+  fill: var(--color-wisteria);
 }
 
 .login:focus::before {
@@ -254,8 +258,8 @@ img {
   color: var(--color-amethyst);
 }
 
-.login__arrow path:active {
-  fill: var(--color-amethyst)
+.login:active svg path {
+  fill: var(--color-amethyst);
 }
 
 .login__arrow-wrap {
@@ -270,6 +274,9 @@ img {
   margin-left: -4px;
 }
 
+.login__arrow path {
+  fill:var(--color-white);
+}
 
 .login:hover .login__arrow-wrap {
   margin-left: -4px;
@@ -278,6 +285,7 @@ img {
 
 .header__bottom {
   background-color: var(--color-dark-opacity);
+  z-index: -1;
 }
 
 .header__bottom-content {
@@ -318,7 +326,7 @@ img {
 
 .dropdown {
   background-color: var(--color-dark-opacity);
-  width: 240px;
+  width: 300px;
   padding: 40px;
   padding-right: 20px;
   position: absolute;
@@ -344,6 +352,23 @@ img {
   min-height: 20px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: box-shadow .3s ease-in-out;
+}
+
+.dropdown__item:hover {
+  box-shadow: inset 0 0 0 2px var(--color-amethyst);
+}
+
+.dropdown__item:focus {
+  box-shadow: inset 0 0 0 2px var(--color-amethyst);
+}
+
+.dropdown__item:active {
+  box-shadow: none;
+}
+
+.dropdown__link:active::before {
+  opacity: 1;
 }
 
 .dropdown__item:last-child {
@@ -365,6 +390,8 @@ img {
   top: 0;
   bottom: 0;
   width: 100%;
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
+  opacity: 0;
 }
 
 .dropdown__simplebar .simplebar-track.simplebar-vertical {
@@ -465,9 +492,11 @@ img {
 .menu__item {
   position: relative;
   margin-right: 96px;
+  z-index: 10;
 }
 
 .menu__btn {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
@@ -477,16 +506,55 @@ img {
   color: var(--color-white);
   background-color: transparent;
   cursor: pointer;
+  transition: color .3s ease-in-out;
 }
 
 .menu__btn--arrow {
-  display: inline-block;
-  width: 12px;
-  height: 7px;
-  margin-left: 3px;
-  background-image: url("../images/arrow.png");
-  background-repeat: no-repeat;
-  background-size: auto;
+  transition: transform .3s ease-in-out;;
+}
+
+.menu__btn--arrow path {
+  transition: stroke .3s ease-in-out;
+}
+
+.menu__btn::before {
+  position: absolute;
+  content: '';
+  top: 15px;
+  right: 0;
+  bottom: 15px;
+  left: 0;
+  background-color: var(--violet-dark);
+  opacity: 0;
+  z-index: -1;
+}
+
+.menu__btn:hover {
+  color: var(--color-amethyst);
+}
+
+.menu__btn:hover svg path {
+  stroke: var(--color-amethyst);
+}
+
+.menu__btn:focus::before {
+  opacity: 1;
+}
+
+.menu__btn:active::before {
+  opacity: 0;
+}
+
+.menu__btn:active {
+  color: var(--violet-dark);
+}
+
+.menu__btn:active svg {
+  transform: rotate(180deg);
+}
+
+.menu__btn:active svg path {
+  stroke: var(--violet-dark);
 }
 
 
@@ -830,8 +898,8 @@ img {
 .checkbox-text::after {
   content: '';
   position: absolute;
-  top: 13px;
-  left: 5px;
+  top: 12px;
+  left: 4px;
   width: 4px;
   height: 4px;
   opacity: 0;
@@ -1481,8 +1549,7 @@ img {
 }
 
 .events__card {
-  /* width: 500px; */
-  height: 700px;
+  height: auto;
   margin-right: 50px;
 }
 
@@ -1744,3 +1811,41 @@ img {
   line-height: 16px;
   padding: 8px 11px 14px;
 }
+
+/*footer*/
+
+.footer {
+  background-color: var(--color-dark);
+}
+
+.footer__logo {
+  width: 300px;
+  height: 100%;
+}
+
+.footer__container {
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social__link path {
+  transition: fill .3s ease-in-out;
+}
+
+.social__link:hover path {
+  fill: var(--color-white);
+}
+
+.social__link:focus path {
+  fill: var(--color-white);
+}
+
+.social__link:active path {
+  fill: var(--color-amethyst);
+}
+
