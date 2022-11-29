@@ -1787,7 +1787,19 @@ img {
   background: none;
   border: 1px solid var(--color-amethyst);
   border-radius: 50%;
+  cursor: pointer;
   transition: color, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: .4s;
+}
+
+.btn-tooltip:hover, .btn-tooltip:focus {
+  background: var(--violet-ultra-light);
+}
+
+.btn-tooltip:active {
+  background: var(--color-amethyst);
+  color: var(--color-white);
 }
 
 .btn-tooltip__content {
