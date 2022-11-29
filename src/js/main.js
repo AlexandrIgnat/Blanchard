@@ -214,3 +214,20 @@ const eventSwiper = new Swiper('.events__slider', {
   //     }
   // },
 });
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map('map', {
+    center: [55.76, 37.64],
+
+    zoom: 7
+  });
+  var myPlacemark = new ymaps.Placemark([55.759932, 37.614141], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: '../images/location.svg',
+    iconImageSize: [20, 20],
+    iconImageOffset: [-2, -20]
+});
+
+myMap.geoObjects.add(myPlacemark); 
+}
