@@ -298,7 +298,24 @@ img {
 }
 
 .search-form__btn {
+  position: relative;
   margin-right: 10px;
+}
+
+.search-form__btn::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+  bottom: 0;
+  border: 2px solid var(--color-white);
+  outline: none;
+  opacity: 0;
+}
+
+.search-form__btn:focus::before {
+  opacity: 1;
 }
 
 .search-form__input {
@@ -874,6 +891,7 @@ img {
   font-size: 16px;
   line-height: 32px;
   color: var(--color-white);
+  transition: color .3s ease-in-out;
 }
 
 .checkbox-text::before {
@@ -885,10 +903,6 @@ img {
   height: 12px;
   border: 1px solid var(--color-white);
   transition: border-color 0.3s ease-in-out;
-}
-
-.checkbox-text:hover::before {
-  border-color: var(--color-wisteria);
 }
 
 .checkbox-text::after {
@@ -904,16 +918,25 @@ img {
   background-position: center center;
 }
 
-.checkbox:checked+.checkbox-text {
+.checkbox-text:hover::before {
+  border-color: var(--color-wisteria);
+}
+
+.checkbox-text:focus {
   color: var(--color-wisteria);
 }
 
-.checkbox:checked+.checkbox-text::before {
+.checkbox-text:focus::before {
   border-color: var(--color-wisteria);
 }
 
 .checkbox:checked+.checkbox-text::after {
+  color: var(--color-wisteria);
   opacity: 1;
+}
+
+.checkbox:checked+.checkbox-text::before {
+  border-color: var(--color-wisteria);
 }
 
 .gallery__slider {
