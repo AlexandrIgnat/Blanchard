@@ -224,18 +224,10 @@ function init() {
   });
   var myPlacemark = new ymaps.Placemark([55.759932, 37.614141], {}, {
     iconLayout: 'default#image',
-<<<<<<< HEAD
-    iconImageHref: '../images/location.svg',
-=======
     iconImageHref: 'images/location.svg',
->>>>>>> e8bc8c82e684b38e0719268806322c7f11905e49
     iconImageSize: [20, 20],
     iconImageOffset: [-2, -20]
 });
 
 myMap.geoObjects.add(myPlacemark); 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e8bc8c82e684b38e0719268806322c7f11905e49
