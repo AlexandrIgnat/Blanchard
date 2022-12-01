@@ -229,5 +229,29 @@ function init() {
     iconImageOffset: [-2, -20]
 });
 
-myMap.geoObjects.add(myPlacemark); 
+myMap.geoObjects.add(myPlacemark);
 }
+
+let btnBurger = document.querySelector('.header__burger');
+
+// Смена состояния бургера
+
+btnBurger.addEventListener('click', function()  {
+  this.classList.toggle('active');
+})
+
+// Запрет на перезагрузку страницы на кнопку поиска
+
+document.querySelector('.header-top__search-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+})
+
+// Раскрытие и закрытие поиска
+
+document.querySelector('.header-top__search-btn').addEventListener('click', function() {
+  document.querySelector('.header-top__search-form').classList.add('active');
+})
+
+document.querySelector('.search-form__close').addEventListener('click', function() {
+  document.querySelector('.header-top__search-form').classList.remove('active');
+})
