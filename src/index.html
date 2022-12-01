@@ -22,46 +22,76 @@
     <header class="header">
       <div class="header-top">
         <div class="container header-content flex">
+          <button class="header__burger">
+            <svg class="hamburger" viewBox="0 0 36 28" width="36px" height="28px">
+              <rect class="line top" width="36px" height="3.65px" x="0" y="0">     </rect>
+              <rect class="line middle" width="28.2px" height="3.65px" x="0" y="12.2px">     </rect>
+              <rect class="line middle" width="24px" height="3.65px" x="0" y="24px">     </rect>
+            <!-- <rect class="cross left-cross" width="36px" height="3.65px" x="0" y="12.2px">     </rect>
+              <rect class="cross right-cross" width="24px" height="3.65px" x="0" y="24px">     </rect> -->
+              <rect class="cross left-cross" x="2.63672" width="0" height="3.72838" transform="rotate(45 2.63672 0)" fill="white"/>
+              <rect class="cross right-cross" y="26.3636" width="0" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
+            </svg>
+          </button>
           <a href="#" class="logo">
             <img src="images/logo_1920.svg" alt="Логотип">
           </a>
-          <nav class="nav">
-            <ul class="nav__list list-reset flex">
-              <li class="nav__item">
-                <a href="#about" class="nav__link"><span class="nav__link-text">О нас</span></a>
-              </li>
-              <li class="nav__item">
-                <a href="#gallary" class="nav__link"><span class="nav__link-text">Галерея</span></a>
-              </li>
-              <li class="nav__item">
-                <a href="#catalog" class="nav__link"><span class="nav__link-text">Каталог</span></a>
-              </li>
-              <li class="nav__item">
-                <a href="#events" class="nav__link"><span class="nav__link-text">События</span></a>
-              </li>
-              <li class="nav__item">
-                <a href="#projects" class="nav__link"><span class="nav__link-text">Проекты</span></a>
-              </li>
-              <li class="nav__item">
-                <a href="#feedback" class="nav__link"><span class="nav__link-text">Контакты</span></a>
-              </li>
-            </ul>
-          </nav>
-          <a href="#" class="login">
-            <span class="login__arrow-wrap">
-              <svg class="login__arrow" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="none"/>
+          <div class="form-block">
+           <form class="header-top__search-form search-form flex ">
+             <button class="header-top__search-btn search-form__btn btn-reset" aria-label="Поиск">
+                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z" fill="white"/>
                 </svg>
-            </span>
-            <span class="login__text">Войти</span>
-          </a>
+              </button>
+              <input class="header-top__search-form__input search-form__input" type="text" placeholder="Поиск по сайту">
+              <button class="search-form__close btn-reset">
+               <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="29.567" height="2.9567" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white"/>
+                  <rect width="29.567" height="2.9567" transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="header-top__midle flex">
+            <nav class="nav">
+              <ul class="nav__list list-reset flex">
+                <li class="nav__item">
+                  <a href="#about" class="nav__link"><span class="nav__link-text">О нас</span></a>
+                </li>
+                <li class="nav__item">
+                  <a href="#gallary" class="nav__link"><span class="nav__link-text">Галерея</span></a>
+                </li>
+                <li class="nav__item">
+                  <a href="#catalog" class="nav__link"><span class="nav__link-text">Каталог</span></a>
+               </li>
+                <li class="nav__item">
+                  <a href="#events" class="nav__link"><span class="nav__link-text">События</span></a>
+                </li>
+                <li class="nav__item">
+                  <a href="#projects" class="nav__link"><span class="nav__link-text">Проекты</span></a>
+                </li>
+                <li class="nav__item">
+                  <a href="#feedback" class="nav__link"><span class="nav__link-text">Контакты</span></a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="login">
+              <span class="login__arrow-wrap">
+                <svg class="login__arrow" width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.62056 9.09278L10.6389 10.1111L14.25 6.5L10.6389 2.88889L9.62056 3.90722L11.4839 5.77778H0V7.22222H11.4839L9.62056 9.09278ZM16.0556 0H5.94444C5.14278 0 4.5 0.65 4.5 1.44444V4.33333H5.94444V1.44444H16.0556V11.5556H5.94444V8.66667H4.5V11.5556C4.5 12.35 5.14278 13 5.94444 13H16.0556C16.85 13 17.5 12.35 17.5 11.5556V1.44444C17.5 0.65 16.85 0 16.0556 0Z" fill="none"/>
+                </svg>
+              </span>
+              <span class="login__text">Войти</span>
+            </a>
+          </div>
         </div>
         <div class="test-block">Test</div>
       </div>
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom-content flex">
-            <ul class="menu__list list-reset">
+            <ul class="menu__list list-reset flex">
               <li class="menu__item">
                 <button class="menu__btn">
                   <span class="menu__btm-text">Реализм</span>
@@ -245,6 +275,30 @@
             </form>
           </div>
         </div>
+      </div>
+      <div class="menu-burger">
+        <nav class="menu-burger__nav">
+          <ul class="nav__list list-reset flex">
+            <li class="nav__item">
+              <a href="#about" class="nav__link"><span class="nav__link-text">О нас</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallary" class="nav__link"><span class="nav__link-text">Галерея</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#catalog" class="nav__link"><span class="nav__link-text">Каталог</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#events" class="nav__link"><span class="nav__link-text">События</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link"><span class="nav__link-text">Проекты</span></a>
+            </li>
+            <li class="nav__item">
+              <a href="#feedback" class="nav__link"><span class="nav__link-text">Контакты</span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <section class="hero">
@@ -842,10 +896,14 @@
             <span class="feedback__form-text">Леонтьевский переулок, дом 5/1</span>
           </div>
           <div class="feeadback__form">
-            <form action="" class="form">
-              <input type="text" class="feedback__form-input" placeholder="Имя*">
-              <input type="tel" class="feedback__form-input" placeholder="Телефон*">
-              <button class="feedback__form-submit btn-reset" type="button">Заказать обратный звонок</button>
+            <form action="" class="form" id="form">
+              <div class="feedback__form-block">
+                <input type="text" id="name" class="feedback__form-input" placeholder="Имя*">
+              </div>
+              <div class="feedback__form-block">
+                <input type="tel" id="phone" class="feedback__form-input" placeholder="Телефон*">
+              </div>
+              <button class="feedback__form-submit btn-reset" type="submit">Заказать обратный звонок</button>
             </form>
           </div>
           <div class="feedback__social">
@@ -915,6 +973,7 @@
   <script defer src="js/swiper-bundle.min.js"></script>
   <script defer src="js/simplebar.min.js"></script>
   <script defer src="./js/choices.min.js"></script>
+  <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script defer src="js/main.js"></script>
   <script defer src="https://unpkg.com/@popperjs/core@2"></script>
   <script defer src="https://unpkg.com/tippy.js@6"></script>
