@@ -64,9 +64,16 @@ const swiper = new Swiper('.js-hero-swiper', {
 
 const mySwiper = new Swiper('.slider-2', {
   direction: 'horizontal',
-  slidesPerView: '3',
+  slidesPerView: '2',
   slidesPerGroup: 3,
-  spaceBetween: 50,
+  spaceBetween: 34,
+
+  breakpoints: {
+    1025: {
+      slidesPerView: '3',
+      spaceBetween: 50,
+    }
+  },
 
   a11y: {
     prevSlideMessage: 'предыдущий слайд',
