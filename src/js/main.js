@@ -181,7 +181,7 @@ swiperImage.forEach(element => {
 const eventSwiper = new Swiper('.events__slider', {
   slidesPerView: '3',
   spaceBetween: 50,
-
+  slidesPerGroup: 3,
 
   navigation: {
     nextEl: '.events__slider-btn-next',
@@ -198,12 +198,11 @@ const eventSwiper = new Swiper('.events__slider', {
     nextSlideMessage: 'следующий слайд',
   },
 
-  // breakpoints: {
-  //   500: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 34,
-  //     slidesPerGroup: 2,
-  //   },
+  breakpoints: {
+    1220: {
+     spaceBetween: 27,
+    }
+  }
 
   //   962: {
   //     slidesPerView: 3,
@@ -211,7 +210,7 @@ const eventSwiper = new Swiper('.events__slider', {
   //     slidesPerGroup: 3,
   //   },
 
-  //   1400: {
+  // 1400: {
   //     slidesPerView: 3,
   //     spaceBetween: 50,
   //     slidesPerGroup: 3,
