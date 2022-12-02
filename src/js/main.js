@@ -68,6 +68,10 @@ const mySwiper = new Swiper('.slider-2', {
   slidesPerGroup: 3,
   spaceBetween: 50,
 
+  a11y: {
+    prevSlideMessage: 'предыдущий слайд',
+    nextSlideMessage: 'следующий слайд',
+  },
 
 
   pagination: {
@@ -231,6 +235,42 @@ function init() {
 
 myMap.geoObjects.add(myPlacemark);
 }
+
+const validate = new window.JustValidate('#form');
+
+validate
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Недопустимая длина',
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Достигнута максимальная длина',
+    },
+    {
+      rule: 'required',
+      errorMessage: 'Обязательное поле*',
+    },
+
+  ])
+  .addField('#phone', [
+    {
+      rule: 'required',
+      errorMessage: 'Вы не ввели телефон*',
+    },
+    {
+      rule: 'number',
+      errorMessage: 'Недопустимый формат',
+    },
+    {
+      rule: 'maxLength',
+      value: 11,
+      errorMessage: 'Достигнута максимальная длина',
+    }
+  ])
 
 let btnBurger = document.querySelector('.header__burger');
 
