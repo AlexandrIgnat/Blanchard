@@ -236,6 +236,7 @@ function init() {
 myMap.geoObjects.add(myPlacemark);
 }
 
+<<<<<<< HEAD
 const validate = new window.JustValidate('#form');
 
 validate
@@ -272,6 +273,8 @@ validate
     }
   ])
 
+=======
+>>>>>>> c01b3119267ccde40783d8dcdd42719c2f1b864a
 let btnBurger = document.querySelector('.header__burger');
 
 // Смена состояния бургера
