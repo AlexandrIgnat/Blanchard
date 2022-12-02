@@ -1,0 +1,57 @@
+@media (max-width: 1220px) {
+
+  :root {
+    --gap: 30px;
+  }
+
+  .header__burger, .form-block {
+    display: inline-block;
+  }
+
+  .nav,
+  .login,
+  .header__bottom,
+  .header-top__midle {
+    display: none;
+  }
+
+  .card__content {
+    padding: 10px 30px;
+    padding-bottom: 40px;
+  }
+
+  .feedback__container {
+    flex-wrap: wrap;
+  }
+
+  .feedback__form-descr {
+    margin-bottom: var(--gap);
+  }
+
+  .feeadback__form {
+    margin-bottom: var(--gap);
+  }
+
+  .feedback__form-input {
+    padding: 9px 45px 9px 24px;
+  }
+
+  .accordion__inner-list {
+    column-count: 2;
+}
+
+@media (max-width: 1024px) {
+
+  .events__swiper-pagination {
+    display: inline-block
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    display: none
+  }
+
+
+}
+
+}
+;
