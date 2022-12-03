@@ -285,6 +285,8 @@ let btnBurger = document.querySelector('.header__burger');
 
 btnBurger.addEventListener('click', function()  {
   this.classList.toggle('active');
+  document.querySelector('.toggle-menu').classList.toggle('visible');
+  document.body.classList.toggle('is-menu-open');
 })
 
 // Запрет на перезагрузку страницы на кнопку поиска

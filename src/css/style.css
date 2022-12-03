@@ -137,6 +137,12 @@ img {
   color: var(--color-nightrider);
 }
 
+.is-menu-open {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
 /*header*/
 
 .top-wrapper {
@@ -392,6 +398,7 @@ img {
   padding: 0;
   height: 28px;
   background-color: transparent;
+  z-index: 10;
 }
 
 .menu-burger {
@@ -753,14 +760,31 @@ img {
   animation-direction: alternate;
 }
 
-.test-block {
+.toggle-menu {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
-  display: none;
   width: 100%;
   height: 100vh;
   background-color: var(--color-dark-opacity);
+  padding: 97px 0 50px 50px;
+}
+
+.toggle-menu__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.toggle-menu__nav-list {
+  flex-direction: column;
+}
+
+.visible {
+  display: flex;
 }
 
 .slide {
@@ -2261,7 +2285,7 @@ img {
 
 .header-top__search-form {
   transition: all ease-in-out .3s;
-  transform: translateX(calc(100% - 26px));
+  transform: translateX(calc(100% - 26.5px));
 }
 
 .header-top__search-form.active {

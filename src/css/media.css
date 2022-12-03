@@ -8,16 +8,30 @@
     display: inline-block;
   }
 
-  .nav,
-  .login,
   .header__bottom,
   .header-top__midle {
     display: none;
   }
 
+  .nav:has(.desktop),.login:has(.desktop) {
+    display: none;
+  }
+
+  .nav:not(:has(.desktop)) {
+    margin-bottom: 73px;
+  }
+
+  .nav__link-text {
+    line-height: 64px;
+  }
+
+  .login {
+    width: max-content;
+  }
+
   .flex-property {
     display: flex;
-    flex: 0 0 30%;
+    flex: 1 0 30%;
   }
 
   .justify-content-start {
@@ -27,6 +41,20 @@
 
   .justify-content-center {
     justify-content: center;
+  }
+
+  .justify-content-end {
+    justify-content: end;
+  }
+
+  .search-form__input {
+    width: 100%;
+    max-width: 218px;
+    margin-right: 24px;
+  }
+
+  .header-top__search-btn {
+    margin-right: 9.5px;
   }
 
   .card__content {
