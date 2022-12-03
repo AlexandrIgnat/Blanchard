@@ -23,21 +23,23 @@
     <header class="header">
       <div class="header-top">
         <div class="container header-content flex">
+         <div class="burger-wraper justify-content-start flex-property">
           <button class="header__burger">
             <svg class="hamburger" viewBox="0 0 36 28" width="36px" height="28px">
               <rect class="line top" width="36px" height="3.65px" x="0" y="0">     </rect>
               <rect class="line middle" width="28.2px" height="3.65px" x="0" y="12.2px">     </rect>
               <rect class="line middle" width="24px" height="3.65px" x="0" y="24px">     </rect>
-            <!-- <rect class="cross left-cross" width="36px" height="3.65px" x="0" y="12.2px">     </rect>
-              <rect class="cross right-cross" width="24px" height="3.65px" x="0" y="24px">     </rect> -->
               <rect class="cross left-cross" x="2.63672" width="0" height="3.72838" transform="rotate(45 2.63672 0)" fill="white"/>
               <rect class="cross right-cross" y="26.3636" width="0" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
             </svg>
           </button>
-          <a href="#" class="logo">
-            <img src="images/logo_1920.svg" alt="Логотип">
-          </a>
-          <div class="form-block">
+         </div>
+         <div class="justify-content-center flex-property">
+            <a href="#" class="logo">
+              <img src="images/logo_1920.svg" alt="Логотип">
+            </a>
+          </div>
+          <div class="form-block flex-property">
            <form class="header-top__search-form search-form flex ">
              <button class="header-top__search-btn search-form__btn btn-reset" aria-label="Поиск">
                 <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -514,6 +516,8 @@
                         <span class="link__text">Бьяджо д’Антонио Туччи</span>
                       </a>
                     </li>
+                  </ul>
+                  <ul class="accordion__inner-list list-reset">
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#">
                         <span class="link__text">Веккьетта</span>
@@ -559,6 +563,8 @@
                         <span class="link__text">Джорджоне</span>
                       </a>
                     </li>
+                  </ul>
+                  <ul class="accordion__inner-list list-reset">
                     <li class="accordion__item">
                       <a class="accordion__painter-link link link--text link--text-another js-tab-btn" data-path="empty" href="#">
                         <span class="link__text">Парентино, Бернардо</span>
