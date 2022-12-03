@@ -57,6 +57,10 @@
     margin-right: 9.5px;
   }
 
+  .common__text {
+    max-width: 100%;
+  }
+
   .card__content {
     padding: 10px 30px;
     padding-bottom: 40px;
@@ -80,18 +84,32 @@
 
   .accordion__inner-list {
     column-count: 2;
+  }
 }
 
 @media (max-width: 1024px) {
 
   .events__swiper-pagination {
-    display: inline-block
+    display: block;
+    position:absolute;
   }
 
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -30px;
+  }
+
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #CACACA;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 15px;
+  }
+
+  .events__slider-btn-next, .events__slider-btn-prev {
     display: none
   }
 }
-
-}
-;
