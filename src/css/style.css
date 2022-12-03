@@ -1188,10 +1188,7 @@ img {
   left: 103px;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
+.gallery__swiper-pagination {
   top: -11px;
   left: 50px;
   width: max-content;
