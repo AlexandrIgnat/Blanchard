@@ -1580,9 +1580,13 @@ img {
 }
 
 .accordion__inner-list {
-  width: 100%;
-  min-height: 288px;
-  column-count: 3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 352px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  column-gap: 60px;
 }
 
 .accordion__question {

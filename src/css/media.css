@@ -18,6 +18,11 @@
   .feedback__form-input {
     padding: 9px 45px 9px 24px;
   }
+
+  .accordion__inner-list {
+    max-height: 440px;
+    column-gap: 55px;
+  }
 }
 
 @media (max-width: 1220px) {
@@ -88,11 +93,6 @@
     padding-bottom: 40px;
   }
 
-
-
-  .accordion__inner-list {
-    column-count: 2;
-  }
 }
 
 @media (max-width: 1024px) {
