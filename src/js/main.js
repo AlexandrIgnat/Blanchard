@@ -229,11 +229,11 @@ ymaps.ready(init);
 
 function init() {
   var myMap = new ymaps.Map('map', {
-    center: [55.76, 37.64],
+    center: [55.75846806898367,37.60108849999989],
 
-    zoom: 7
+    zoom: 15
   });
-  var myPlacemark = new ymaps.Placemark([55.759932, 37.614141], {}, {
+  var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'images/location.svg',
     iconImageSize: [20, 20],
