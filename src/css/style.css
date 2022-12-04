@@ -183,6 +183,7 @@ img {
 }
 
 .nav__link {
+  position: relative;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -230,6 +231,18 @@ img {
   line-height: 25px;
   color: var(--color-white);
   transition: color .3s ease-in-out, fill .3s ease-in-out;
+}
+
+.btn-toggle {
+  position: relative;
+  padding: 20px 88px;
+  border: 2px solid var(--color-amethyst);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-white);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .login__arrow path {
@@ -399,6 +412,7 @@ img {
   height: 28px;
   background-color: transparent;
   z-index: 10;
+  cursor: pointer;
 }
 
 .menu-burger {
@@ -767,16 +781,15 @@ img {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: var(--color-dark-opacity);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 97px 0 50px 50px;
 }
 
 .toggle-menu__wraper {
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .toggle-menu__nav-list {
@@ -860,8 +873,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 82px;
-  padding-bottom: 81px;
+  padding: 76px 0;
 }
 
 .gallery__filter {
@@ -1544,11 +1556,10 @@ img {
 }
 
 .accordion__content-wrap {
-  display: flex;
   flex-direction: row;
   gap: 60px;
   padding-top: 30px;
-  padding-bottom: 57px;
+  padding-bottom: 23px;
 }
 
 .accordion__content-description {
@@ -1569,8 +1580,9 @@ img {
 }
 
 .accordion__inner-list {
-  width: auto;
-  column-count: 1;
+  width: 100%;
+  min-height: 288px;
+  column-count: 3;
 }
 
 .accordion__question {
@@ -2092,7 +2104,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 34px 0;
+  padding: 37px 0;
 }
 
 .feedback__form-title {
