@@ -72,7 +72,7 @@ const mySwiper = new Swiper('.slider-2', {
     1220: {
       slidesPerView: '3',
       slidesPerGroup: 3,
-      spaceBetween: 34,
+      spaceBetween: 50,
     }
   },
 
@@ -148,7 +148,7 @@ btns.forEach(item => {
 })
 
 
-const choices = new Choices('.gallery_filter-select', {
+const choices = new Choices('.gallery__filter-select', {
   searchEnabled: false,
   placeholder: true,
   itemSelectText: ''
@@ -189,7 +189,7 @@ swiperImage.forEach(element => {
 const eventSwiper = new Swiper('.events__slider', {
   slidesPerView: '3',
   spaceBetween: 27,
-  slidesPerGroup: 3,
+  slidesPerGroup: 2,
 
   navigation: {
     nextEl: '.events__slider-btn-next',
@@ -207,9 +207,18 @@ const eventSwiper = new Swiper('.events__slider', {
   },
 
   breakpoints: {
+
+    990: {
+      slidesPerView: '2',
+      spaceBetween: 27,
+      slidesPerGroup: 2,
+    },
+
     1220: {
-     spaceBetween: 50,
-    }
+      slidesPerView: '3',
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+     },
   }
 
   //   962: {
