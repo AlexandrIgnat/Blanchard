@@ -237,7 +237,7 @@ const eventSwiper = new Swiper('.events__slider', {
       slidesPerView: '3',
       spaceBetween: 50,
       slidesPerGroup: 3,
-     },
+    },
   }
 });
 
@@ -245,26 +245,25 @@ ymaps.ready(init);
 
 function init() {
   var myMap = new ymaps.Map('map', {
-    center: [55.75846806898367,37.60108849999989],
+    center: [55.75846806898367, 37.60108849999989],
 
     zoom: 15
   });
-  var myPlacemark = new ymaps.Placemark([55.75846806898367,37.60108849999989], {}, {
+  var myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'images/location.svg',
     iconImageSize: [20, 20],
     iconImageOffset: [-2, -20]
-});
+  });
 
-myMap.geoObjects.add(myPlacemark);
+  myMap.geoObjects.add(myPlacemark);
 }
 
 
 const validate = new window.JustValidate('#form');
 
 validate
-  .addField('#name', [
-    {
+  .addField('#name', [{
       rule: 'minLength',
       value: 2,
       errorMessage: 'Недопустимая длина',
@@ -280,8 +279,7 @@ validate
     },
 
   ])
-  .addField('#phone', [
-    {
+  .addField('#phone', [{
       rule: 'required',
       errorMessage: 'Вы не ввели телефон*',
     },
@@ -300,7 +298,7 @@ let btnBurger = document.querySelector('.header__burger');
 
 // Смена состояния бургера
 
-btnBurger.addEventListener('click', function()  {
+btnBurger.addEventListener('click', function() {
   this.classList.toggle('active');
   document.querySelector('.toggle-menu').classList.toggle('visible');
   document.body.classList.toggle('is-menu-open');
