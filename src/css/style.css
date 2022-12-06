@@ -1293,7 +1293,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 121px 0px 121px 48px;
+  padding: 121px 50px 121px 48px;
 }
 
 .gallery__modal-author {
