@@ -6,19 +6,15 @@
   .feedback__container {
     flex-wrap: wrap;
   }
-
   .feedback__form-descr {
     margin-bottom: var(--gap);
   }
-
   .feedback__block {
     margin-bottom: var(--gap);
   }
-
   .feedback__form-input {
     padding: 9px 45px 9px 24px;
   }
-
   .accordion__inner-list {
     max-height: 440px;
     column-gap: 55px;
@@ -26,196 +22,160 @@
 }
 
 @media (max-width: 1220px) {
-
   .hero {
     padding-top: 104px;
     padding-bottom: 114px;
   }
-
   .hero__title {
     margin: 0;
   }
-
   .hero__text {
     max-width: 100%;
     margin-bottom: 125px;
   }
-
-  .header__burger, .form-block {
+  .header__burger,
+  .form-block {
     display: inline-block;
   }
-
   .header__bottom,
   .header-top__midle {
     display: none;
   }
-
-  .nav:has(.desktop),.login:has(.desktop) {
+  .nav:has(.desktop),
+  .login:has(.desktop) {
     display: none;
   }
-
   .nav:not(:has(.desktop)) {
     margin-bottom: 73px;
   }
-
   .nav__link-text {
     line-height: 64px;
   }
-
   .login {
     width: max-content;
   }
-
   .login:focus::before {
     opacity: 0;
   }
-
   .flex-property {
     display: flex;
     flex: 1 0 30%;
   }
-
   .justify-content-start {
     display: flex;
     justify-content: flex-start;
   }
-
   .justify-content-center {
     justify-content: center;
   }
-
   .justify-content-end {
     justify-content: end;
   }
-
   .search-form__input {
     width: 100%;
     max-width: 218px;
     margin-right: 24px;
   }
-
   .header-top__search-btn {
     margin-right: 9.5px;
   }
-
   .common-text {
     max-width: 100%;
   }
-
   .card__content {
     padding: 10px 30px;
     padding-bottom: 40px;
   }
-
   .accordion__content-baner {
     width: 173px;
     height: 114px;
   }
-
+  .gallery__modal-author {}
 }
 
 @media (max-width: 1024px) {
-
   .slide-1 {
     background-image: url('../images/hero_swiper_1_1024.jpg');
   }
-
   .slide-2 {
     background-image: url('../images/hero_swiper_2_1024.jpg');
   }
-
   .slide-3 {
     background-image: url('../images/hero_swiper_3_1024.jpg');
   }
-
   .events__swiper-pagination {
     display: block;
-    position:absolute;
+    position: absolute;
   }
-
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
     bottom: -30px;
   }
-
   .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0;
     width: 10px;
     height: 10px;
     background-color: #CACACA;
   }
-
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 15px;
   }
-
-  .events__slider-btn-next, .events__slider-btn-prev {
+  .events__slider-btn-next,
+  .events__slider-btn-prev {
     display: none
   }
 }
 
 @media (max-width: 1014px) {
-
   .slide-1 {
     background-image: url('../images/hero_swiper_1_768.jpg');
   }
-
   .slide-2 {
     background-image: url('../images/hero_swiper_2_768.jpg');
   }
-
   .slide-3 {
     background-image: url('../images/hero_swiper_3_768.jpg');
   }
-
   .catalog__wrap {
     flex-direction: column-reverse;
   }
-
   .catalog__accordion {
     width: 100%;
     margin-bottom: 50px;
   }
-
   .feedback__form-block {
     margin-bottom: 12px;
   }
-
   .catalog__content-wrap {
     width: 100%;
   }
-
   .catalog__painter-text {
     max-width: 100%;
   }
-
   .accordion__inner-list {
     max-height: 310px;
     column-gap: 50px;
   }
-
   .gallery__filter-container {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .gallery__swiper-nav {
     bottom: 0;
     top: 30px;
   }
-
   .choices {
     margin-bottom: 40px;
   }
-
-
 }
 
 @media (max-width: 768px) {
-
   .header-content {
     position: relative;
   }
-
   .header-top__search-form {
     position: absolute;
     width: 100%;
@@ -228,9 +188,7 @@
     transition: all ease-in-out .3s;
     transform: translateX(calc(100% - 130px));
   }
-
   .search-form__input {
     min-width: 576px;
   }
 }
-
