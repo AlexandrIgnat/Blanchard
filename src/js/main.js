@@ -319,3 +319,16 @@ document.querySelector('.header-top__search-btn').addEventListener('click', func
 document.querySelector('.search-form__close').addEventListener('click', function() {
   document.querySelector('.header-top__search-form').classList.remove('active');
 })
+
+let toggleMenuLinks = document.querySelectorAll('.toggle-menu__wraper a');
+
+toggleMenuLinks.forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault;
+    btnBurger.classList.remove('active');
+    document.body.classList.remove('is-menu-open');
+    document.querySelector('.toggle-menu').classList.remove('visible');
+  })
+})
+
+;
