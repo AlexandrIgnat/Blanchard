@@ -95,8 +95,7 @@ const mySwiper = new Swiper('.slider-2', {
 })
 
 const projectsPartnerSwiper = new Swiper('.slider-3', {
-  slidesPerView: '3',
-  slidesPerGroup: 3,
+  slidesPerView: '1',
   spaceBetween: 50,
 
   navigation: {
@@ -109,6 +108,21 @@ const projectsPartnerSwiper = new Swiper('.slider-3', {
     prevSlideMessage: 'предыдущий слайд',
     nextSlideMessage: 'следующий слайд',
   },
+
+  breakpoints: {
+
+    680: {
+      slidesPerView: '2',
+      spaceBetween: 34,
+      slidesPerGroup: 2,
+    },
+
+    962: {
+      slidesPerView: '3',
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+    },
+  }
 })
 
 
@@ -187,9 +201,8 @@ swiperImage.forEach(element => {
 })
 
 const eventSwiper = new Swiper('.events__slider', {
-  slidesPerView: '3',
-  spaceBetween: 27,
-  slidesPerGroup: 2,
+  slidesPerView: '1',
+  spaceBetween: 25,
 
   navigation: {
     nextEl: '.events__slider-btn-next',
@@ -208,32 +221,26 @@ const eventSwiper = new Swiper('.events__slider', {
 
   breakpoints: {
 
-    990: {
+    680: {
       slidesPerView: '2',
-      spaceBetween: 27,
+      spaceBetween: 34,
       slidesPerGroup: 2,
     },
 
-    1220: {
+    962: {
+      slidesPerView: '3',
+      spaceBetween: 27,
+      slidesPerGroup: 3,
+    },
+
+    1400: {
       slidesPerView: '3',
       spaceBetween: 50,
       slidesPerGroup: 3,
      },
   }
-
-  //   962: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 27,
-  //     slidesPerGroup: 3,
-  //   },
-
-  // 1400: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 50,
-  //     slidesPerGroup: 3,
-  //     }
-  // },
 });
+
 ymaps.ready(init);
 
 function init() {
