@@ -19,9 +19,17 @@
     max-height: 440px;
     column-gap: 55px;
   }
+
+  .gallery {
+    background-image: url('../images/gallery-bg-1024.jpg');
+  }
 }
 
 @media (max-width: 1220px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 34px;
+  }
   .hero {
     padding-top: 104px;
     padding-bottom: 114px;
@@ -90,7 +98,42 @@
     width: 173px;
     height: 114px;
   }
-  .gallery__modal-author {}
+
+  .gallery__filter {
+    width: 48%;
+  }
+
+  .gallery__filter-container {
+    padding-top: 80px;
+    padding-bottom: 115px;
+  }
+  
+  .gallery__title {
+    margin-bottom: 16px;
+  }
+
+  .gallery__filter-label {
+    margin-bottom: 10px;;
+  }
+
+  .choices {
+    margin-bottom: 108px;
+  }
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 0px;
+    top: 46px;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    top: 46px;
+    left: 98px;
+  }
+
+  .gallery__swiper-pagination {
+    top: 25px;
+    left: 46px;
+  }
 }
 
 @media (max-width: 1024px) {
