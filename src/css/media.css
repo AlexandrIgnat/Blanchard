@@ -120,12 +120,12 @@
     margin-bottom: 108px;
   }
 
-  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+  .gallery__swiper-button-prev, .swiper-rtl .gallery__swiper-button-next {
     left: 0px;
     top: 46px;
   }
 
-  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+  .gallery__swiper-button-next, .swiper-rtl .gallery__swiper-button-prev {
     top: 46px;
     left: 98px;
   }
