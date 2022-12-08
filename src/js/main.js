@@ -118,6 +118,12 @@ const projectsPartnerSwiper = new Swiper('.slider-3', {
     },
 
     962: {
+      slidesPerView: '2',
+      spaceBetween: 50,
+      slidesPerGroup: 1,
+    },
+
+    1025: {
       slidesPerView: '3',
       spaceBetween: 50,
       slidesPerGroup: 3,
