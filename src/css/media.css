@@ -242,5 +242,10 @@
   right: -50px;
   top: 0;
   background: black;
+  transform: none;
+ }
+
+.header-top__search-form {
+  transform: translateX(-10%);
  }
 }
