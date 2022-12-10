@@ -137,9 +137,6 @@ const projectsPartnerSwiper = new Swiper('.slider-3', {
   }
 })
 
-
-
-
 document.querySelectorAll(".dropdown__simplebar").forEach(dropdown => {
   new SimpleBar(dropdown, {
     /* чтобы изначально ползунок был виден */
@@ -324,8 +321,12 @@ document.querySelector('.header-top__search-form').addEventListener('submit', (e
 
 // Раскрытие и закрытие поиска
 
-document.querySelector('.header-top__search-btn').addEventListener('click', function() {
-  document.querySelector('.header-top__search-form').classList.add('active');
+var searchBtn = document.querySelectorAll('.header-top__search-btn');
+
+searchBtn.forEach((elemet) => {
+  elemet.addEventListener('click', function() {
+    document.querySelector('.header-top__search-form').classList.add('active');
+  })
 })
 
 document.querySelector('.search-form__close').addEventListener('click', function() {

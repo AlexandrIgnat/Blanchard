@@ -335,6 +335,10 @@ img {
   margin-right: 10px;
 }
 
+.search-form__open {
+  display: none;
+}
+
 .search-form__btn svg rect,
 .search-form__btn svg path {
   transition: fill .3s ease-in-out;
