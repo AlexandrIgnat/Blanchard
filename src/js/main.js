@@ -64,8 +64,8 @@ const swiper = new Swiper('.js-hero-swiper', {
 
 const mySwiper = new Swiper('.slider-2', {
   direction: 'horizontal',
-  slidesPerView: '2',
-  slidesPerGroup: 2,
+  slidesPerView: '1',
+  slidesPerGroup: 1,
   spaceBetween: 34,
 
   breakpoints: {
@@ -75,9 +75,9 @@ const mySwiper = new Swiper('.slider-2', {
       spaceBetween: 50,
     },
 
-    320: {
-      slidesPerView: '1',
-      slidesPerGroup: 1,
+    457: {
+      slidesPerView: '2',
+      slidesPerGroup: 2,
       spaceBetween: 50,
     }
   },
