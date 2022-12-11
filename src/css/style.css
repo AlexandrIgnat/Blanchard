@@ -907,13 +907,13 @@ img {
   font-weight: 600;
   font-size: 16px;
   line-height: 32px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .choices {
   margin-bottom: 181px;
   max-width: 400px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--color-white);
   border-radius: 6px;
 }
 
@@ -1134,7 +1134,7 @@ img {
 }
 
 .slide-gallery:focus::before {
-  border-color: #7943A4;
+  border-color: var(--violet-dark);
 }
 
 .slide-gallery:active::before {
@@ -1186,13 +1186,13 @@ img {
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   font-size: 14px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   font-size: 14px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .swiper-button-next,
@@ -1224,7 +1224,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
-  color: #FFF;
+  color: var(--color-white);
 }
 
 .swiper-button-next.swiper-button-disabled,
@@ -1305,7 +1305,7 @@ img {
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  color: #333333;
+  color: var(--color-nightrider);
 }
 
 .gallery__modal-name {
@@ -1314,7 +1314,7 @@ img {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: #333333;
+  color: var(--color-nightrider);
 }
 
 .gallery__modal-date {
@@ -1322,7 +1322,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #999999;
+  color: var(--color-light-gray);
 }
 
 .gallery__modal__text {
@@ -1331,7 +1331,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #333333;
+  color: var(--color-nightrider);
 }
 
 
@@ -1384,9 +1384,10 @@ img {
 
 .catalog__painter-subtitle {
   display: inline-block;
-  font-size: 12px;
-  color: #999999;
   margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-light-gray);
 }
 
 .catalog__painter-text {
@@ -2356,7 +2357,7 @@ img {
 
 .header-top__search-form {
   transition: all ease-in-out .3s;
-  transform: translateX(calc(100% - 26.5px));
+  transform: translateX(calc(100% - 42.5px));
 }
 
 .header-top__search-form.active {
