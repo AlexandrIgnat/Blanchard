@@ -46,7 +46,8 @@
 
   .hero__text {
     max-width: 100%;
-    margin-bottom: 125px;
+    margin-top: -8px;
+    margin-bottom: 133px;
   }
 
   .header__burger,
@@ -82,7 +83,7 @@
 
   .flex-property {
     display: flex;
-    flex: 1 0 30%;
+    flex: 1 0 33%;
   }
 
   .justify-content-start {
@@ -163,6 +164,11 @@
 }
 
 @media (max-width: 1024px) {
+
+  .logo {
+    margin-left: -16px;
+  }
+
   .slide-1 {
     background-image: url('../images/hero_swiper_1_1024.jpg');
   }

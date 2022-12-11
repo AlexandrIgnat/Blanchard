@@ -164,6 +164,7 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  overflow: hidden;
 }
 
 .header-top__midle {
