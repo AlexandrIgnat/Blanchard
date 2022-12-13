@@ -210,6 +210,20 @@
     display: none
   }
 
+  .swiper-gallary {
+    margin-top: 50px;
+    padding-right: 17px;
+    transform: translateY(36px);
+  }
+
+  .swiper-slide {
+    width: 280px;
+  }
+
+  .swiper-container.slider-2 {
+    height: 315px;
+  }
+
   .gallery__modal {
     width: 594px;
     height: 594px;
@@ -395,7 +409,7 @@
     width: 100%;
   }
 
-  .search-form__open {
+  .search-form-open {
     display: inline-block;
   }
 
@@ -487,6 +501,7 @@
     max-width: 145px;
   }
 
+  .search-form-btn svg,
   .search-form__btn svg {
     width: 19px;
     height: 17px;

@@ -62,6 +62,8 @@ const swiper = new Swiper('.js-hero-swiper', {
   }
 });
 
+// gallary swiper
+
 const mySwiper = new Swiper('.slider-2', {
   direction: 'horizontal',
   slidesPerView: '1',
@@ -78,7 +80,7 @@ const mySwiper = new Swiper('.slider-2', {
     457: {
       slidesPerView: '2',
       slidesPerGroup: 2,
-      spaceBetween: 50,
+      // spaceBetween: 3,
     }
   },
 
