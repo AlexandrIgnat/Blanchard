@@ -115,7 +115,7 @@
 
   .card__content {
     padding: 10px 30px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
   }
 
   .accordion__content-baner {
@@ -129,7 +129,7 @@
 
   .gallery__filter-container {
     padding-top: 80px;
-    padding-bottom: 117px;
+    padding-bottom: 113px;
   }
 
   .gallery__title {
@@ -138,7 +138,10 @@
 
   .gallery__filter-label {
     margin-bottom: 10px;
-    ;
+  }
+
+  .gallery__swiper-nav {
+    bottom: 200px;
   }
 
   .choices {
@@ -154,12 +157,12 @@
   .gallery__swiper-button-next,
   .swiper-rtl .gallery__swiper-button-prev {
     top: 46px;
-    left: 98px;
+    left: 102px;
   }
 
   .gallery__swiper-pagination {
     top: 25px;
-    left: 46px;
+    left: 50px;
   }
 }
 
@@ -224,9 +227,17 @@
     height: 315px;
   }
 
+  .choices__inner {
+    min-height: 38px;
+  }
+
   .gallery__modal {
     width: 594px;
     height: 594px;
+  }
+
+  .gallery__swiper-nav {
+    bottom: 183px;
   }
 
   .form {
@@ -275,7 +286,7 @@
   }
 
   .card__descr {
-    margin-bottom: 29px;
+    margin-bottom: 23px;
   }
 
   .events__list {
@@ -361,6 +372,10 @@
     width: 100%;
   }
 
+  .catalog__painter-image {
+    max-width: 95%;
+  }
+
   .catalog__painter-text {
     max-width: 100%;
   }
@@ -388,7 +403,7 @@
 @media (max-width: 768px) {
   .header-content {
     position: relative;
-    height: 97px;
+
   }
 
   .header-top__search-form {
@@ -432,6 +447,10 @@
     margin-right: 13px;
   }
 
+  .about {
+    padding-bottom: 67px;
+  }
+
   .gallery__filter {
     width: 42%;
   }
@@ -445,7 +464,7 @@
   }
 
   .gallery__filter-container {
-    padding-bottom: 110px;
+    padding-bottom: 145px;
   }
 
   .accordion__heading {
@@ -484,6 +503,10 @@
 
   .projects__text {
     margin-bottom: 26px;
+  }
+
+  .feedback__form-submit {
+    padding: 10px 29px 10px 27px;
   }
 }
 
