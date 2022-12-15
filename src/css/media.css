@@ -168,6 +168,10 @@
 
 @media (max-width: 1024px) {
 
+  .container {
+    padding-right: 50px;
+  }
+
   .logo {
     margin-left: -16px;
   }
@@ -217,7 +221,7 @@
   .swiper-gallary {
     margin-top: 50px;
     padding-right: 17px;
-    transform: translateY(36px);
+    transform: translateY(34px);
   }
 
   .swiper-slide {
@@ -396,6 +400,10 @@
     top: 16px;
   }
 
+  .swiper-gallary {
+    padding-right: 0;
+  }
+
   .choices {
     margin-bottom: 40px;
   }
@@ -454,6 +462,11 @@
 
   .about {
     padding-bottom: 67px;
+  }
+
+  .container-gallary {
+    padding: 0 50px;
+    max-width: 768px;
   }
 
   .gallery__filter {

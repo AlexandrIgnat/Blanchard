@@ -77,10 +77,16 @@ const mySwiper = new Swiper('.slider-2', {
       spaceBetween: 50,
     },
 
+    769: {
+      slidesPerView: '2',
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+
     457: {
       slidesPerView: '2',
       slidesPerGroup: 2,
-      // spaceBetween: 3,
+      spaceBetween: 38,
     }
   },
 
@@ -211,6 +217,8 @@ swiperImage.forEach(element => {
   })
 })
 
+// events slider
+
 const eventSwiper = new Swiper('.events__slider', {
   slidesPerView: '1',
   spaceBetween: 25,
@@ -244,7 +252,7 @@ const eventSwiper = new Swiper('.events__slider', {
 
     962: {
       slidesPerView: '3',
-      spaceBetween: 30,
+      spaceBetween: 27,
       slidesPerGroup: 3,
     },
 
