@@ -230,6 +230,10 @@ const eventSwiper = new Swiper('.events__slider', {
     nextSlideMessage: 'следующий слайд',
   },
 
+  a11y: {
+    paginationBulletMessage: 'Перейти на слайд {{index}}',
+  },
+
   breakpoints: {
 
     680: {
