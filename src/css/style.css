@@ -1348,7 +1348,7 @@ img {
 /* catalog */
 
 .catalog {
-  padding: 80px 0;
+  padding: 81px 0;
 }
 
 .catalog__text {
@@ -1381,7 +1381,7 @@ img {
 
 .catalog__painter-image {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 }
 
 .catalog__painter-title {
@@ -1595,7 +1595,7 @@ img {
 .accordion__content-wrap {
   flex-direction: row;
   gap: 24px;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 23px;
 }
 
