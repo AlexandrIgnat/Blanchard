@@ -1353,6 +1353,7 @@ img {
 
 .catalog__text {
   padding-bottom: 42px;
+  max-width: 69%;
 }
 
 .catalog__wrap {
@@ -1403,7 +1404,7 @@ img {
 .catalog__painter-text {
   margin: 0;
   margin-bottom: 15px;
-  max-width: 720px;
+  max-width: 98%;
   font-size: 16px;
   line-height: 32px;
 }
@@ -1773,6 +1774,10 @@ img {
   height: 100%;
 }
 
+.feedback__form-number {
+  margin-left: 6px;
+}
+
 .card__img {
   width: 100%;
 }
@@ -2014,6 +2019,10 @@ img {
 
 .projects__text-link:active::after {
   background-color: var(--violet-dark);
+}
+
+.about-page {
+  display: none;
 }
 
 .projects-partners__title {

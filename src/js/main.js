@@ -210,9 +210,6 @@ window.onclick = function(event) {
 
 swiperImage.forEach(element => {
   element.addEventListener('click', () => {
-    // let img = element.querySelector('.gallery__image').getAttribute('src');
-
-    // modalImage.src = img;
     galleryModal.style.display = "block";
   })
 })
