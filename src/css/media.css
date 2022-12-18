@@ -271,6 +271,7 @@
 
   .catalog__painter-text {
     line-height: 32px;
+    max-width: 100%;
   }
 
   .catalog__painter-image {
@@ -286,6 +287,10 @@
     align-items: flex-end;
   }
 
+  .card__img {
+    transform: translateY(2px);
+  }
+
   .card__title {
     max-width: 100%;
     margin-bottom: 7px;
@@ -298,6 +303,7 @@
 
   .card__descr {
     margin-bottom: 23px;
+    max-width: 99%;
   }
 
   .events__list {
@@ -314,16 +320,12 @@
   }
 
   .projects__swiper-wrapper {
-    padding: 0 58px;
+    padding: 0 52px;
   }
 
   .projects-partners__swiper-button-prev,
   .projects-partners__swiper-button-next {
     top: 50%;
-  }
-
-  .projects-partners__image {
-    max-width: 75%;
   }
 
   .feedback__container {
@@ -491,6 +493,10 @@
     margin-top: 66px;
   }
 
+  .swiper-container.slider-2 {
+    min-height: 330px;
+  }
+
   .choices__inner {
     min-height: 38px;
   }
@@ -500,7 +506,7 @@
   }
 
   .gallery__filter-container {
-    padding-bottom: 129px;
+    padding-bottom: 114px;
   }
 
   .accordion__heading {
@@ -522,6 +528,7 @@
   .catalog__painter-image {
     max-width: 100%;
     margin-bottom: 21px;
+    transform: translateY(2px);
   }
 
   .catalog__painter-subtitle {
@@ -531,6 +538,14 @@
   .card__title {
     max-width: 96%;
     margin-bottom: 5px;
+  }
+
+  .card__content__top {
+    transform: translateX(15px);
+  }
+
+  .is-active > .accordion__heading {
+    transform: translateY(-3px);
   }
 
   .common-title {
@@ -547,18 +562,27 @@
 
   .projects__text {
     margin-bottom: 27px;
+    max-width: 99%;
   }
+
+  .project-page {
+    display: none;
+ }
 
   .projects-partners__slide {
     height: 106px;
   }
 
-  .projects-partners__image {
-    max-width: 81%;
+  .feedback__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .feedback__form-block {
-    width: 47%;
+    flex-basis: 50%;
+    margin-right: 0;
   }
 
   .feedback__form-submit {
@@ -894,6 +918,14 @@
   .projects__title {
     font-size: 28px;
     line-height: 38px;
+  }
+
+  .project-page {
+     display: inline;
+  }
+
+  .about-page {
+    display: inline;
   }
 
   /* feedback */
