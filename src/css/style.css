@@ -1016,11 +1016,6 @@ img {
   align-items: center;
 }
 
-
-/* .gallery__custom-checkbox:not(:last-child) {
-  margin-bottom: 20px;
-} */
-
 .checkbox {
   position: absolute;
   opacity: 0;
@@ -1062,16 +1057,24 @@ img {
   background-position: center center;
 }
 
-.checkbox-text:hover::before {
+.checkbox:focus-visible+.checkbox-text::before {
   border-color: var(--color-wisteria);
 }
 
-.checkbox-text:focus {
+.checkbox:focus-visible+.checkbox-text {
   color: var(--color-wisteria);
 }
 
-.checkbox-text:focus::before {
+.checkbox:hover+.checkbox-text::before {
   border-color: var(--color-wisteria);
+}
+
+.checkbox:hover+.checkbox-text {
+  color: var(--color-wisteria);
+}
+
+.checkbox:checked+.checkbox-text {
+  color: var(--color-wisteria);
 }
 
 .checkbox:checked+.checkbox-text::after {
@@ -1108,6 +1111,7 @@ img {
 .slide-gallery::before {
   content: '';
   position: relative;
+  height: 100%;
   z-index: 1;
   display: block;
   padding-top: calc(100% - 6px);
@@ -2328,6 +2332,10 @@ img {
   filter: grayscale(1);
 }
 
+.ymaps-2-1-79-copyrights-pane {
+  display: none;
+}
+
 
 /*footer*/
 
@@ -2398,3 +2406,4 @@ img {
 .header-top__search-form.active * {
   visibility: visible;
 }
+
