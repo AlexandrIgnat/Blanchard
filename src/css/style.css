@@ -439,6 +439,11 @@ img {
   cursor: pointer;
 }
 
+.header__burger:focus {
+  outline: 3px solid var(--color-amethyst);
+  outline-offset: 2px;
+}
+
 .menu-burger {
   display: none;
 }
@@ -451,6 +456,10 @@ img {
 
 .cross {
   transition: all ease-in-out .4s;
+}
+
+.header__burger.active {
+  width: 29px;
 }
 
 .header__burger.active .line {
@@ -937,6 +946,7 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.is-focused,
 .choices__inner:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
