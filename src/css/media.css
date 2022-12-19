@@ -779,7 +779,6 @@
     margin-top: 0;
   }
 
-
   .gallery__swiper-nav {
     bottom: 0;
     top: 363px;
@@ -803,6 +802,9 @@
     top: 10px;
   }
 
+  .checkbox-text::after {
+    top: 14px;
+  }
 
   /* Catalog */
 
