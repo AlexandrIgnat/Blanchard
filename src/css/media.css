@@ -905,10 +905,6 @@
     margin-right: 11px;
   }
 
-  /* .card__img {
-    width: 98%;
-  } */
-
   .card__title {
     margin-bottom: 4px;
   }
@@ -922,6 +918,10 @@
 
   .project-page {
      display: inline;
+  }
+
+  .projects-partners__slide {
+    height: 65px;
   }
 
   .about-page {
