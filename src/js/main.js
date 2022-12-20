@@ -332,15 +332,18 @@ document.querySelector('.header-top__search-form').addEventListener('submit', (e
 // Раскрытие и закрытие поиска
 
 var searchBtn = document.querySelectorAll('.header-top__search-btn');
+let searchItems = Array.from(document.querySelector('.header-top__search-form').children);
 
 searchBtn.forEach((elemet) => {
   elemet.addEventListener('click', function() {
     document.querySelector('.header-top__search-form').classList.add('active');
+    setTabIndex(searchItems, 0, false);
   })
 })
 
 document.querySelector('.search-form__close').addEventListener('click', function() {
   document.querySelector('.header-top__search-form').classList.remove('active');
+  setTabIndex(searchItems, -1, true);
 })
 
 let toggleMenuLinks = document.querySelectorAll('.toggle-menu__wraper a');
@@ -354,4 +357,30 @@ toggleMenuLinks.forEach(el => {
   })
 })
 
+// блок управления табиндексом
+
+function setTabIndex(elements, index, bool) {
+  elements.forEach((e) => {
+    e.setAttribute('tabindex', index);
+    e.setAttribute('aria-hidden', bool);
+  });
+}
+
+let switcher = true;
+
+window.onresize = function setTabindexSearchHeader() {
+  if (window.innerWidth <= 768 && switcher) {
+    setTabIndex(searchItems, -1, true);
+    switcher = !switcher;
+    console.log('no tabindex ' + switcher);
+
+  }
+  if (window.innerWidth >= 768 && switcher == false) {
+    setTabIndex(searchItems, 0, false);
+    switcher = !switcher;
+    console.log('hav tabindex');
+  }
+}
+
+window.innerWidth <= 768 ? setTabIndex(searchItems, -1, true) : setTabIndex(searchItems, 0, false);
 ;

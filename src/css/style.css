@@ -335,6 +335,7 @@ img {
 .search-form__btn {
   position: relative;
   margin-right: 10px;
+  z-index: 2;
 }
 
 .search-form-open {
