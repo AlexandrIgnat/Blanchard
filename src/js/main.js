@@ -369,16 +369,14 @@ function setTabIndex(elements, index, bool) {
 let switcher = true;
 
 window.onresize = function setTabindexSearchHeader() {
+  window.innerWidth <= 768 ? setTabIndex(searchItems, -1, true) : setTabIndex(searchItems, 0, false);
   if (window.innerWidth <= 768 && switcher) {
     setTabIndex(searchItems, -1, true);
     switcher = !switcher;
-    console.log('no tabindex ' + switcher);
-
   }
   if (window.innerWidth >= 768 && switcher == false) {
     setTabIndex(searchItems, 0, false);
     switcher = !switcher;
-    console.log('hav tabindex ');
   }
 }
 
