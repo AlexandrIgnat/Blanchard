@@ -370,6 +370,18 @@ img {
   z-index: -1;
 }
 
+.search-form__close::before {
+  position: absolute;
+  content: '';
+  top: -5px;
+  right: 15px;
+  bottom: -2px;
+  left: -5px;
+  background-color: var(--violet-dark);
+  opacity: 0;
+  z-index: -1;
+}
+
 .search-form-btn:hover rect,
 .search-form__btn:hover rect {
   fill: var(--color-wisteria);
