@@ -343,7 +343,7 @@ searchBtn.forEach((elemet) => {
 
 document.querySelector('.search-form__close').addEventListener('click', function() {
   document.querySelector('.header-top__search-form').classList.remove('active');
-  setTabIndex(searchItems, -1, true);
+  window.innerWidth <= 768 ? setTabIndex(searchItems, -1, true) : setTabIndex(searchItems, 0, false);
 })
 
 let toggleMenuLinks = document.querySelectorAll('.toggle-menu__wraper a');
@@ -378,7 +378,7 @@ window.onresize = function setTabindexSearchHeader() {
   if (window.innerWidth >= 768 && switcher == false) {
     setTabIndex(searchItems, 0, false);
     switcher = !switcher;
-    console.log('hav tabindex');
+    console.log('hav tabindex ');
   }
 }
 
