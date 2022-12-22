@@ -597,6 +597,11 @@
     padding-right: 15px;
   }
 
+  .header-top__search-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .hero__title {
     margin-bottom: 10px;
     font-size: 56px;
@@ -625,10 +630,21 @@
   }
 
   /* Header */
-  /* .search-form__input {
-    min-width: 145px;
-    max-width: 145px;
-  } */
+
+  .toggle-menu {
+    padding: 40px 0 50px 15px;
+  }
+
+  .nav__link-text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .btn-toggle {
+    padding: 11px 31px;
+    font-size: 12px;
+    line-height: 16px;
+  }
 
   .search-form-btn svg,
   .search-form__btn svg {
@@ -637,7 +653,6 @@
   }
 
   .search-form__close svg {
-    margin-right: 20px;
     width: 18px;
     height: 18px;
   }
@@ -773,17 +788,13 @@
 
   .gallery__filter-container {
     padding-top: 50px;
-    padding-bottom: 151px;
+    padding-bottom: 130px;
   }
 
   .gallery__title {
     margin-bottom: 12px;
     font-size: 28px;
     line-height: 38px;
-  }
-
-  .gallery__filter {
-    margin-bottom: 30px;
   }
 
   .gallery__filter-label {
@@ -800,14 +811,21 @@
     height: 100%;
   }
 
+  .swiper-container.slider-2 {
+    min-height: 367px;
+  }
+
   .swiper {
     margin-top: 0;
   }
 
+  .swiper-gallary {
+    transform: translateY(31px);
+  }
+
   .gallery__swiper-nav {
-    bottom: 0;
-    top: 363px;
-    left: 82px;
+    top: 393px;
+    left: 79px;
   }
 
   .choices {
@@ -838,13 +856,25 @@
     padding-bottom: 35px;
   }
 
+  .catalog__accordion {
+    margin-bottom: 52px;
+  }
+
   .accordion__heading-text-wrap {
     font-size: 18px;
     line-height: 32px;
   }
 
   .accordion__heading {
-    padding: 22px 120px 18px 0;
+    padding: 20px 120px 19px 0;
+  }
+
+  .is-active > .accordion__heading {
+    transform: translateY(0);
+  }
+
+  .accordion__heading {
+    width: 97%;
   }
 
   .accordion__content-wrap {
@@ -853,7 +883,7 @@
 
   .head-icon {
     top: 51%;
-    right: 4px;
+    right: 1px;
     width: 30px;
     height: 34px;
   }
@@ -921,11 +951,11 @@
   }
 
   .card__content__top {
-    transform: translateX(-15px);
+    transform: translateX(0);
   }
 
   .card__link {
-    margin-top: 0;
+    margin-top: auto;
   }
 
   .card__content__top {
@@ -940,15 +970,29 @@
     margin-bottom: 4px;
   }
 
+  #events__swiper-pagination {
+    margin-bottom: 9px;
+  }
+
   /*Projects*/
+
+  .projects {
+    padding-top: 27px;
+    padding-bottom: 8px;
+  }
 
   .projects__title {
     font-size: 28px;
     line-height: 38px;
   }
 
+  .projects-partners__title {
+    margin-bottom: 11px;
+    font-size: 18px;
+  }
+
   .project-page {
-     display: inline;
+    display: inline;
   }
 
   .projects-partners__slide {
@@ -959,14 +1003,50 @@
     display: inline;
   }
 
+  .projects__text {
+    margin-bottom: 51px;
+  }
+
+  .projects__text-link {
+    display: inline-block;
+  }
+
+  .devide {
+    display: block;
+  }
+
+  .projects__swiper-wrapper {
+    padding-right: 57px;
+    padding-left: 47px;
+  }
+
+  .projects-partners__swiper-button-next {
+    right: 9px;
+  }
+
   /* feedback */
+
+  .feedback {
+    border-top: none;
+  }
+
   .form {
     flex-direction: column;
   }
 
   .feedback__form-title {
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .feedback__form-descr {
+    margin-bottom: 20px;
+  }
+
+  .feedback__social-title {
+    font-weight: 400;
+    font-size: 18px;
   }
 
   .feedback__social-svg {
@@ -980,13 +1060,22 @@
   }
 
   .feedback__form-submit {
-    width: 100%;
+    width: 96%;
     font-size: 12px;
     line-height: 16px;
   }
 
   .feedback__form-block {
     flex-basis: 100%;
+    margin-bottom: 18px;
+  }
+
+  .feedback__block {
+    margin-bottom: 20px;
+  }
+
+  .feedback__container {
+    padding-bottom: 17px;
   }
 
   /*footer*/
@@ -994,15 +1083,17 @@
   .footer__container {
     flex-direction: column-reverse;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
   }
 
   .footer__logo {
     width: 97px;
+    transform: translate(-5px, -3px);
   }
 
   .social__list {
     margin-bottom: 20px;
+    transform: translateX(-5px);
   }
 
   .social__link-svg {
