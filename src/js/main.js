@@ -65,8 +65,11 @@ const swiper = new Swiper('.js-hero-swiper', {
 // gallary swiper
 
 const mySwiper = new Swiper('.slider-2', {
-  direction: 'horizontal',
-  slidesPerView: '1',
+  slidesPerView: 1,
+  grid: {
+    rows: 1,
+    fill: "row"
+  },
   slidesPerGroup: 1,
   spaceBetween: 34,
 
@@ -95,6 +98,14 @@ const mySwiper = new Swiper('.slider-2', {
     nextSlideMessage: 'следующий слайд',
   },
 
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true
+  },
+
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
+  slideVisibleClass: "slide-visible",
 
   pagination: {
     el: ".gallery .swiper-pagination",
@@ -106,6 +117,27 @@ const mySwiper = new Swiper('.slider-2', {
     prevEl: '.gallery__swiper-button-prev',
     clickable: true,
   },
+
+  on: {
+    init: function () {
+      this.slides.forEach((slide) => {
+        if (!slide.classList.contains("slide-visible")) {
+          slide.tabIndex = "-1";
+        } else {
+          slide.tabIndex = "";
+        }
+      });
+    },
+    slideChange: function () {
+      this.slides.forEach((slide) => {
+        if (!slide.classList.contains("slide-visible")) {
+          slide.tabIndex = "-1";
+        } else {
+          slide.tabIndex = "";
+        }
+      });
+    }
+  }
 })
 
 const projectsPartnerSwiper = new Swiper('.slider-3', {
