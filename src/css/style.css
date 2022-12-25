@@ -370,6 +370,7 @@ img {
   background-color: var(--violet-dark);
   opacity: 0;
   z-index: -1;
+  transition: opacity .3s ease-in-out;
 }
 
 .search-form-btn:hover rect,
@@ -663,7 +664,6 @@ img {
 
 .menu__btn-arrow {
   transition: transform .3s ease-in-out;
-  ;
 }
 
 .menu__btn-arrow path {
@@ -680,6 +680,7 @@ img {
   background-color: var(--violet-dark);
   opacity: 0;
   z-index: -1;
+  transition: opacity .3s ease-in-out;
 }
 
 .menu__btn:hover {
@@ -1115,10 +1116,6 @@ img {
   height: 100%;
 }
 
-/* .swiper-gallary {
-  width: 100%;
-} */
-
 .swiper-container.slider-2 {
   width: 100%;
   height: 100%;
@@ -1436,20 +1433,47 @@ img {
   line-height: 32px;
 }
 
-.catalog__painter-more {
+.catalog__painter-link {
+  position: relative;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: var(--color-amethyst);
+  transition: color .3s ease-in-out;
+}
+
+.catalog__painter-link::before {
+  position: absolute;
+  content: '';
+  top: -5px;
+  right: -2px;
+  bottom: -5px;
+  left: -2px;
+  background-color: var(--violet-dark);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity .3s ease-in-out;
+}
+
+.catalog__painter-link:hover {
+  color: var(--violet-dark);
+}
+
+.catalog__painter-link:focus:before {
+  opacity: 1;
+}
+
+.catalog__painter-link:focus {
+  color: var(--color-white);
 }
 
 .accordion__content-link {
   position: relative;
-  color: var(--color-amethyst);
-  transition: color .3s ease-in-out;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  transition: color .3s ease-in-out;
+  color: var(--color-amethyst);
 }
 
 .accordion__content-more {
@@ -1467,6 +1491,7 @@ img {
   background-color: var(--violet-dark);
   opacity: 0;
   z-index: -1;
+  transition: opacity .3s ease-in-out;
 }
 
 .accordion__content-link:hover {

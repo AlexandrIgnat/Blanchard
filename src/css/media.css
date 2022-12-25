@@ -353,8 +353,8 @@
   }
 
   .feedback__form-submit {
-    padding-left: 41px;
-    padding-right: 41px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   .social__link-svg {
@@ -699,6 +699,7 @@
 
   .header-top__search-btn {
     margin: 0;
+    transform: translateX(-7px);
   }
 
   .header-top__search-form__input {
