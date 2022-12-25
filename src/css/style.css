@@ -12,6 +12,7 @@
   --violet-dark: #7943a4;
   --violet-ultra-light: #d1a9f0;
   --color-light-gray: #999999;
+  --harley-Orange:#d11616;
 }
 
 @font-face {
@@ -1491,7 +1492,7 @@ img {
 .accordion__content-baner {
   width: 275px;
   height: 189px;
-  background-color: #999;
+  background-color: var(--color-light-gray);
   box-shadow: inset 0px 0px 0px 2px var(--color-light-gray), inset 0px 0px 0px 14px var(--color-whisper);
 }
 
@@ -2254,7 +2255,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #D11616;
+  color: var(--harley-Orange);
 }
 
 .feedback__form-input:focus {

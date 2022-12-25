@@ -1,5 +1,6 @@
 :root {
   --gap: 30px;
+  --light-middle-gray: #cacaca;
 }
 
 @media (max-width: 1562px) {
@@ -209,7 +210,7 @@
     margin: 0;
     width: 10px;
     height: 10px;
-    background-color: #CACACA;
+    background-color: var(--light-middle-gray);
   }
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -912,6 +913,10 @@
   .catalog {
     padding-top: 50px;
     padding-bottom: 3px;
+  }
+
+  .catalog__accordion {
+    margin-bottom: 52px;
   }
 
   .catalog__accordion {
