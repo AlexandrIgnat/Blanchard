@@ -2075,7 +2075,7 @@ img {
   margin: 0;
 }
 
-.projects-partners__slide {
+.projects-partners-slide {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -2085,8 +2085,8 @@ img {
   border: 2px solid var(--light-middle-gray);
 }
 
-.projects-partners__slide:focus,
-.projects-partners__slide:active {
+.projects-partners-slide:focus,
+.projects-partners-slide:active {
   border-color: var(--color-amethyst);
 }
 
@@ -2096,8 +2096,8 @@ img {
   transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.projects-partners__slide:active .projects-partners__image,
-.projects-partners__slide:hover .projects-partners__image {
+.projects-partners-slide:active .projects-partners__image,
+.projects-partners-slide:hover .projects-partners__image {
   opacity: 1;
   filter: grayscale(0);
 }
