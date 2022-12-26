@@ -817,7 +817,7 @@ img {
 
 .toggle-menu {
   visibility: hidden;
-  display: flex;
+  display: none;
   position: fixed;
   left: 0;
   top: 0;

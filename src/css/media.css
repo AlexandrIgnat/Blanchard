@@ -170,6 +170,10 @@
     padding-right: 50px;
   }
 
+  .toggle-menu {
+    display: flex;
+  }
+
   .logo {
     margin-left: -16px;
   }
